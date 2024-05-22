@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <style>
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
+
 <body>
-    codesync station 
+    <!-- ================== HEADER PART START================== -->
+    <header id="header">
+        <nav id="navbar" class="navbar navbar-expand-xl p-0 py-lg-1">
+            <div class="container">
+                <a class="logo" href="#hero">
+                    <img src="assets/images/logo.png" alt="Codesync station" />
+                    <!-- <span class="text-primary">Zaras</span> Properties -->
+                </a>
+
+                <div class="d-flex d-xl-none justify-content-center align-items-center gap-3">
+                    <button href="#" class="animated-btn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-title="Click to call">
+                        <i class="fa-solid fa-phone"></i>
+                        Order Now
+                    </button>
+                </div>
+
+                <button class="navbar-toggler ps-5" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
+
+                <div class="offcanvas flex-1 offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="bi bi-x-lg text-white"></i>
+                        </button>
+                    </div>
+
+                    <div class="offcanvas-body bg-transparent">
+                        <div class="d-flex justify-content-between w-100">
+                            <ul class="navbar-nav mx-auto mb-2 mt-lg-2">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#hero">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">Service</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#portfolio">About us </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#services">Contact</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#inverstor">Career</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#testimonials">FAQ</a>
+                                </li>
+                            </ul>
+
+                            <div class="d-xl-flex d-none justify-content-center align-items-center gap-3">
+                                <a href="tell:+447738940597" class="animated-btn" data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom" data-bs-title="Click to call">
+                                    ORDER NOW
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- =================== HEADER PART END=================== -->
+    <section>
+        <div class="container">
+            <h1 class="text-success text-center display-2 fw-bold">Section 1</h1>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h1 class="text-info text-center display-2 fw-bold">Section 2</h1>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h1 class="text-info text-center display-2 fw-bold">Section 3</h1>
+        </div>
+    </section>
 </body>
+<!-- BOOTSTRAP JS -->
+<script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- MAIN JS SCRIPT -->
+<script src="assets/js/main.js"></script>
+
+
 </html>
