@@ -23,6 +23,7 @@ input[type='date']:valid::before {
 
 textarea {
   resize: none;
+  border: 1px solid rgb(190, 190, 192);
 }
 
 // HIDE INPUT ARROWS
@@ -72,5 +73,33 @@ input[type='search']::-webkit-search-results-decoration {
   &:focus {
     box-shadow: none;
     outline: none;
+  }
+}
+
+.inputbox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    color: rgb(38, 37, 46);
+  }
+  input {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    border: 1px solid rgb(190, 190, 192);
+    box-sizing: border-box;
+    height: 59px;
+    padding: 13px;
+    color: rgb(38, 37, 46);
+    opacity: 1;
+  }
+  .selectfield {
+      border: 1px solid rgb(190, 190, 192);
+      height: 59px;
   }
 }
