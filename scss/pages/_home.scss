@@ -1,6 +1,6 @@
 @use "../global" as *;
 @use "../partials" as *;
-#hero-banner{
+.hero {
   position: relative;
   top: 70px;
   display: flex;
@@ -12,8 +12,6 @@
   // background-color: white;
   overflow: hidden;
   text-align: center;
-
-  
   #video-box{
     height: 600px;
     width: 100%;
@@ -40,9 +38,7 @@
     z-index: 999;
     content: '';
   }
-}
-
-
+  
 #hero-content {
   position: absolute;
   // background-color: azure;
@@ -62,8 +58,7 @@
   z-index: 1000;
   padding: 0 30px;
 }
-
-#hero-banner #hero-button-container {
+#hero-button-container {
   
   display: flex;
   align-items: center;
@@ -71,7 +66,7 @@
 
 }
 
-#hero-button-container button{
+button{
   // display: inline-block;
  padding: 10px 20px;
   border-radius: 20px;
@@ -84,8 +79,7 @@
   color: azure;
   font-weight: 600;
 }
-
-#hero-banner div button:nth-of-type(1){
+ div button:nth-of-type(1){
   background-color: $primary;
   transition: opacity .1s;
   
@@ -93,8 +87,7 @@
     opacity: .85;
   }
 }
-
-#hero-banner div button:nth-of-type(2){
+div button:nth-of-type(2){
   border: 1px solid #f0f0f0;
   
   
@@ -104,14 +97,15 @@
   }
 }
 
-div{
-  background-color: transparent;
-}
-
-#hero-banner div h1{
+div h1{
   color: black;
   font-size: 50px;
   margin-bottom: 16px;
   color: #fff;
  
 }
+
+
+}
+
+
