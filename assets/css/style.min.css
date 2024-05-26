@@ -958,9 +958,19 @@ input[type=search]::-webkit-search-results-decoration:focus {
 }
 #service .service-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 16px;
   padding: 3rem 0;
+}
+@media screen and (min-width: 48rem) {
+  #service .service-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 62rem) {
+  #service .service-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 #service .service-wrapper .service-item .circle {
   border: 2px solid lightgray;
