@@ -1,22 +1,19 @@
 @use "../../global" as *;
 @use "../../partials" as *;
 header {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   transition: all .8s ease-in-out;
   z-index: 9999;
+  backdrop-filter: blur(10px);
 }
 
 .navbar {
-  
   .logo {
     width: 100px;
     height: 60px;
-    color: white;
     @include font($primaryFont, 18, semibold, normal, normal);
     @include flex;
     gap: 8px;
@@ -31,7 +28,7 @@ header {
   }
   @include breakpoint(desktop1200) {
     .logo {
-      flex: 1;
+      // flex: 1;
       @include font($primaryFont, 25, semibold, normal, normal);
     }
   }
@@ -41,7 +38,7 @@ header {
     width: min(70vw, 400px);
 
     .nav-link {
-      color: #fff;
+      color: #fff !important;
       transition: 0.3s;
       margin: 0px 10px;
       padding: 5px 0;
@@ -54,7 +51,7 @@ header {
         display: block;
         position: absolute;
         width: 0%;
-        height: 2px;
+        height: 3px;
         background-color: $primary;
         transition: 0.3s;
         left: 50%;
@@ -64,7 +61,7 @@ header {
         width: 100%;
       }
       &:hover {
-        color: $primary;
+        color: $primary !important;
         font-weight: 500;
       }
     }
